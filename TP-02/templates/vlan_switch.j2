@@ -1,0 +1,18 @@
+hostname {{hostname}}
+{% for interface in interfaces %}
+{% if interface.type == "vlan" %}
+vlan {{interface.vlan_id}}
+exit
+{% endif %}
+interface {{interface.name}}
+description {{interface.description}}
+{% if interface.type == "access" %}
+switchport access vlan {{interface.vlan_id}}
+{% elif interface.type == "trunk" %}
+switchport mode trunk
+{% elif interface.type == "vlan" %}
+ip address {{interface.ip}} {{interface.mask}}
+{% endif %}
+no shut
+exit
+{% endfor %}

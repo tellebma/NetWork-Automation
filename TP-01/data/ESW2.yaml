@@ -1,0 +1,25 @@
+
+hostname: 'ESW2'
+interfaces:
+  -
+    name: 'f1/0'
+    description: 'Interface trunk via R2'
+    type: 'trunk'
+  -
+    name: 'f1/1'
+    description: 'Interface access vlan 10'
+    type: 'access'
+    vlan_id: '10'
+  -
+    name: 'f1/2'
+    description: 'Interface access vlan 20'
+    type: 'access'
+    vlan_id: '20'
+  -
+    name: 'vlan 99'
+    description: 'managment vlan 99 admin'
+    type: 'vlan'
+    ip: '172.16.100.191'
+    mask: '255.255.255.192'
+    vlan_id: '99'
+  

@@ -1,0 +1,33 @@
+{
+    "hostname":"ESW1-A",
+    "vlans":[
+        {
+            "id":10,
+            "name":"teacher10"
+        },{
+            "id":20,
+            "name":"student20"
+        }
+    ],
+    "interfaces":[{
+        "name":"f1/14",
+        "description":"Interface trunk via R1-CPE-BAT-A",
+        "mode":"trunk",
+        "allowed_vlan":"10,20"
+    },{
+        "name":"f1/15",
+        "description":"Interface trunk via R2-CPE-BAT-A",
+        "mode":"trunk",
+        "allowed_vlan":"10,20"
+    },{
+        "name":"f1/1",
+        "description":"Interface access vlan 10",
+        "mode":"access",
+        "vlan_id":10
+    },{
+        "name":"f1/2",
+        "description":"Interface access vlan 20",
+        "mode":"access",
+        "vlan_id":20
+    }]
+}

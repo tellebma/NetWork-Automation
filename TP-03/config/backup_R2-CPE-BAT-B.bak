@@ -1,0 +1,159 @@
+!
+upgrade fpd auto
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R4
+!
+boot-start-marker
+boot-end-marker
+!
+logging message-counter syslog
+!
+no aaa new-model
+ip source-route
+no ip icmp rate-limit unreachable
+ip cef
+!
+!
+!
+!
+no ip domain lookup
+ip domain name r4.cpe.local
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+username cisco privilege 15 password 0 cisco
+archive
+ log config
+  hidekeys
+! 
+!
+!
+!
+!
+ip tcp synwait-time 5
+ip ssh version 2
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+ duplex half
+!
+interface Serial1/0
+ ip address 10.102.1.1 255.255.255.252
+ serial restart-delay 0
+!
+interface Serial1/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/1
+ ip address 10.1.4.2 255.255.255.252
+ serial restart-delay 0
+!
+interface Serial2/2
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface Serial2/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+!
+interface GigabitEthernet3/0
+ description "**NO DESCRIPTION**"
+ no ip address
+ negotiation auto
+!
+interface GigabitEthernet3/0.99
+ encapsulation dot1Q 99
+ ip address 172.16.100.190 255.255.255.192
+ vrrp 99 ip 172.16.100.188
+ vrrp 99 priority 110
+!
+router ospf 1
+ log-adjacency-changes
+ passive-interface Serial1/0
+ passive-interface GigabitEthernet3/0.99
+ network 10.1.4.0 0.0.0.3 area 0
+ network 172.16.100.128 0.0.0.63 area 0
+!
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+!
+no cdp log mismatch duplex
+!
+!
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+gatekeeper
+ shutdown
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+end

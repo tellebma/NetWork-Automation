@@ -1,0 +1,12 @@
+hostname R1
+interface G2/0.10
+    encapsulation dot1Q 10
+    description "Vlan 10"
+    ip address 172.16.30.253 255.255.255.0
+    exit
+
+interface g2/0.20
+    encapsulation dot1Q 20
+    description "Vlan 20"
+    ip address 172.16.40.253 255.255.255.0
+    exit

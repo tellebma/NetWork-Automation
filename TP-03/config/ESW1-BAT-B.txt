@@ -1,0 +1,30 @@
+
+vlan 10
+    name teacher10
+    exit
+vlan 20
+    name student20
+    exit
+
+
+interface f1/14
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20
+    exit
+
+interface f1/15
+    switchport mode trunk
+    switchport trunk allowed vlan 10,20
+    exit
+
+interface f1/1
+    switchport mode access
+    switchport access vlan 10
+    description "Interface access vlan 10"
+    exit
+
+interface f1/2
+    switchport mode access
+    switchport access vlan 20
+    description "Interface access vlan 20"
+    exit
