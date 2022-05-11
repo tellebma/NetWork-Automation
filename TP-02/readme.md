@@ -7,21 +7,18 @@ Puis passage dans un render de template et écriture de la configuration dans un
 
 Mise en situation cas réél (simulation GNS3)
 
-- <a href="./scripts/run_paramiko.py">paramiko</a>  
-### Paramiko  
+### <a href="./scripts/run_paramiko.py">Paramiko</a>
 Fonctionnement assez basic
 - Connexion avec l'equipement
 - envoi de commande.  
 - Sauvegarde de la configuration de l'équipement
 <b>NB:  Pas de gestion de l'environnement invité de commande (conf t, etc)</b>  
 
-- <a href="./scripts/run_paramiko.py">netmiko</a>  
-### Netmiko  
+### <a href="./scripts/run_paramiko.py">Netmiko  </a>
 Netmiko est assez pratique, simple a utiliser, mais assez basic.
 - Envoi de commande en # et en Conf T. (send_command, send_config_set)
 - Envoie de fichier de configuration (send_config_from_file)  
 
-- <a href="./scripts/run_paramiko.py">napalm</a>
 ###  <a href="./scripts/run_paramiko.py">Napalm </a>
 Napalm est l'outil le plus complet sur lequel nous avons travaillé.
 - Connexion à l'équipement
