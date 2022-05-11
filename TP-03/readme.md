@@ -25,19 +25,21 @@ R1-CPE-BAT-A:
     room: 54001
 ```
 
-L'initialisation de nornir permet d'acceder à toutes les info possible, identifiant de connexion aux routers, mdp, ip etc.
-La commande pour effectuer des tâche est la suivante:  ```python nr.filter(device_type="router_switch").run(task=hello_world) ```
+L'initialisation de nornir permet d'acceder à toutes les info possible, identifiant de connexion aux routers, mdp, ip etc.   
+La commande pour effectuer des tâche est la suivante:  ```python nr.filter(device_type="router_switch").run(task=hello_world) ```  
 Dans le cas ou l'on souhaite faire des tâches plus complexe, on couple nornir avec les différents outils utilisé dans le <a href="../TP-02">TP-02</a>
-Avec Napalm cela donne:
-```python  nr.filter(device_type="router").run(task=napalm_cli, commands=["show ip int brief"])```
-On peut aussi utiliser des fonction simplifier pour avoir les différentes info que l'onsouhaite, pour les utiliser => <a href="https://nornir.readthedocs.io/en/latest/api/index.html" >Documentation</a>
-ex:  
-```python run(task=napalm_get, getters=["get_arp_table"])``` Done les information sur la Table ARP.
-
-Pour filtrer les équipements sur lesquel nous faisons des action On utiliser la foncton `filter`
-```python nr.filter(device_type="router").filter(building="A"). ``` ou ```python nr.filter(device_type="router",building="A"). ```
-
-Nous avons donc avec nornir push les confguration Txt créé. (routage, switch et vrrp)
+Avec Napalm cela donne:  
+```python  nr.filter(device_type="router").run(task=napalm_cli, commands=["show ip int brief"])```   
+On peut aussi utiliser des fonction simplifier pour avoir les différentes info que l'on souhaite,  
+pour les utiliser => <a href="https://nornir.readthedocs.io/en/latest/api/index.html" >Documentation</a>  
+ex:    
+Done les information sur la Table ARP :  
+```python run(task=napalm_get, getters=["get_arp_table"])```   
+      
+Pour filtrer les équipements sur lesquel nous faisons des action On utiliser la foncton `filter`  
+```python nr.filter(device_type="router").filter(building="A"). ```   ou   ```python nr.filter(device_type="router",building="A"). ```  
+     
+Nous avons donc avec nornir push les confguration Txt créé. (routage, switch et vrrp)   
 
 @Maxime BELLET
 @Jeremy METRA
