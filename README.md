@@ -2,6 +2,6 @@
 | TP | Etat |
 |---|---|
 | <a href="./TP-01">TP-01</a> | Fait à 100% |
-| TP-02 | Fait à 100% |
-| TP-03 | Fait à 100% |
-| Projet | Jusqu'à la question 21 |
+| <a href="./TP-02">TP-02</a> | Fait à 100% |
+| <a href="./TP-03">TP-03</a> | Fait à 100% |
+| <a href="./fastprod_backend">Projet</a> | Jusqu'à la question 21 |
