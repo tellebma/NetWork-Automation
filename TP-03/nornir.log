@@ -498,3 +498,498 @@ TypeError: write() argument must be str, not list
 2022-05-09 12:13:11,744 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 4 hosts
 2022-05-09 12:13:56,035 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
 2022-05-09 12:13:56,045 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 4 hosts
+2022-05-11 08:16:26,149 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:16:26,154 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 4 hosts
+2022-05-11 08:23:26,278 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:23:26,290 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 4 hosts
+2022-05-11 08:23:30,172 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command': ['sh ip int brief']} on 4 hosts
+2022-05-11 08:23:30,173 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:30,173 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:30,173 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:30,173 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:48,968 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:23:48,973 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command': ['sh ip int brief']} on 4 hosts
+2022-05-11 08:23:48,974 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:48,974 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:48,974 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:23:48,974 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:25:05,707 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:25:05,713 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command': ['sh ip int brief']} on 4 hosts
+2022-05-11 08:25:05,714 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:25:05,714 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:25:05,715 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:25:05,715 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 08:25:23,756 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:25:23,764 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 4 hosts
+2022-05-11 08:33:03,020 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:33:03,025 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 4 hosts
+2022-05-11 08:33:05,265 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo2', 'ip add 1.1.1.2 255.255.255.255']} on 1 hosts
+2022-05-11 08:33:05,606 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo2', 'ip add 2.2.2.3 255.255.255.255']} on 1 hosts
+2022-05-11 08:36:04,514 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:36:04,525 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'sh ip int brief'} on 4 hosts
+2022-05-11 08:36:06,896 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo2', 'ip add 1.1.1.2 255.255.255.255']} on 1 hosts
+2022-05-11 08:36:07,068 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo2', 'ip add 2.2.2.3 255.255.255.255']} on 1 hosts
+2022-05-11 08:36:07,685 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 2 hosts
+2022-05-11 08:37:52,117 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:37:52,122 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 2 hosts
+2022-05-11 08:40:44,469 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:40:44,474 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 4 hosts
+2022-05-11 08:40:48,158 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 2 hosts
+2022-05-11 08:43:33,080 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:45:56,550 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:45:56,564 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:45:56,564 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:45:56,564 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:45:56,565 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:45:56,565 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:45:56,565 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:46:39,667 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:46:39,672 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:46:39,673 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:46:39,673 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:46:39,673 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:46:39,673 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:46:39,673 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:50:19,163 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:50:19,168 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:50:19,169 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:50:19,169 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:50:19,169 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:50:19,169 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:50:19,169 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:52:30,123 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:52:30,129 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:52:30,129 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:52:30,129 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:52:30,129 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:52:30,130 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:52:30,130 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:36,380 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:53:36,386 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:36,386 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:36,386 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:36,387 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:36,387 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:36,387 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:43,796 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:53:43,804 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:43,805 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:43,806 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:43,806 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:43,806 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:53:43,806 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:54:56,777 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:54:56,784 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:54:56,784 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:54:56,784 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:54:56,784 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:54:56,785 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:54:56,785 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:04,829 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:55:04,837 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:04,838 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:04,838 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:04,838 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:04,839 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:04,839 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:31,571 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:55:31,578 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 08:55:38,430 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:38,430 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:38,430 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:38,430 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:55:38,430 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-05-11 08:56:25,042 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:56:25,047 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 08:56:30,623 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-A.txt'} on 1 hosts
+2022-05-11 08:56:40,978 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-B.txt'} on 1 hosts
+2022-05-11 08:56:46,047 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 283, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 626, in _scp_file
+    return self._xfer_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 695, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2022-05-11 08:56:46,047 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-B.txt'} on 1 hosts
+2022-05-11 08:56:51,131 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 283, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 626, in _scp_file
+    return self._xfer_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 695, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2022-05-11 08:56:51,132 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-A.txt'} on 1 hosts
+2022-05-11 08:57:02,914 - nornir.core.task -    ERROR -      start() - Host 'ESW1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 283, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 626, in _scp_file
+    return self._xfer_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 695, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2022-05-11 08:57:02,914 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-B.txt'} on 1 hosts
+2022-05-11 08:57:11,872 - nornir.core.task -    ERROR -      start() - Host 'ESW1-CPE-BAT-B': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 283, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 626, in _scp_file
+    return self._xfer_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 695, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2022-05-11 08:58:19,358 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 08:58:19,364 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 08:58:24,774 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-A.txt'} on 1 hosts
+2022-05-11 08:58:33,693 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-B.txt'} on 1 hosts
+2022-05-11 08:58:48,809 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 43, in napalm_configure
+    device.commit_config()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 555, in commit_config
+    raise MergeConfigException(merge_error)
+napalm.base.exceptions.MergeConfigException: Configuration merge failed; automatic rollback attempted:
+
+interface G2/0.10
+            ^
+% Invalid input detected at '^' marker.
+
+    encapsulation dot1Q 10
+      ^
+% Invalid input detected at '^' marker.
+
+    description "Vlan 10"
+      ^
+% Invalid input detected at '^' marker.
+
+    ip address 172.16.30.253 255.255.255.0
+              ^
+% Invalid input detected at '^' marker.
+
+259 bytes copied in 0.072 secs (3597 bytes/sec)
+R1#
+
+2022-05-11 08:58:48,810 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-B.txt'} on 1 hosts
+2022-05-11 08:59:04,321 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 43, in napalm_configure
+    device.commit_config()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 555, in commit_config
+    raise MergeConfigException(merge_error)
+napalm.base.exceptions.MergeConfigException: Configuration merge failed; automatic rollback attempted:
+
+interface G2/0.10
+            ^
+% Invalid input detected at '^' marker.
+
+    encapsulation dot1Q 10
+      ^
+% Invalid input detected at '^' marker.
+
+    description "Vlan 10"
+      ^
+% Invalid input detected at '^' marker.
+
+    ip address 172.16.30.254 255.255.255.0
+              ^
+% Invalid input detected at '^' marker.
+
+259 bytes copied in 0.044 secs (5886 bytes/sec)
+R2#
+
+2022-05-11 08:59:04,321 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-A.txt'} on 1 hosts
+2022-05-11 08:59:11,437 - nornir.core.task -    ERROR -      start() - Host 'ESW1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 283, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 626, in _scp_file
+    return self._xfer_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 695, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2022-05-11 08:59:11,438 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-B.txt'} on 1 hosts
+2022-05-11 08:59:18,612 - nornir.core.task -    ERROR -      start() - Host 'ESW1-CPE-BAT-B': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 283, in _load_candidate_wrapper
+    (return_status, msg) = self._scp_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 626, in _scp_file
+    return self._xfer_file(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 695, in _xfer_file
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: SCP file transfers are not enabled. Configure 'ip scp server enable' on the device.
+
+2022-05-11 09:16:54,965 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:16:54,977 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 09:17:01,651 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-A.txt'} on 1 hosts
+2022-05-11 09:17:12,183 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-B.txt'} on 1 hosts
+2022-05-11 09:17:25,019 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-B.txt'} on 1 hosts
+2022-05-11 09:17:37,814 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-A.txt'} on 1 hosts
+2022-05-11 09:18:00,537 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-B.txt'} on 1 hosts
+2022-05-11 09:19:01,310 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:19:01,316 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 09:19:06,729 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-A.txt'} on 1 hosts
+2022-05-11 09:19:15,340 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-B.txt'} on 1 hosts
+2022-05-11 09:19:25,037 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-B.txt'} on 1 hosts
+2022-05-11 09:19:36,016 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-A.txt'} on 1 hosts
+2022-05-11 09:19:54,652 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/ESW1-BAT-B.txt'} on 1 hosts
+2022-05-11 10:04:03,193 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:04:03,199 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 10:04:08,776 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-A.txt'} on 1 hosts
+2022-05-11 10:04:12,073 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:04:12,083 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R1-BAT-A.txt'} on 1 hosts
+2022-05-11 10:04:17,692 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'filename': './config/R2-BAT-A.txt'} on 1 hosts
+2022-05-11 10:04:20,523 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:04:20,532 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:04:21,359 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:04:21,360 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:04:21,360 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:04:21,361 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:04:59,535 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:04:59,543 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:05:00,270 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:05:00,271 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:05:00,271 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:05:00,271 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:05:17,681 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:05:17,687 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:05:18,398 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:05:18,399 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:05:18,399 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:05:18,487 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:06:20,905 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:06:20,916 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:06:21,622 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:06:21,623 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:06:23,625 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:06:23,730 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:09:19,307 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:09:19,311 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:09:20,044 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:09:20,045 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:09:22,048 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:09:22,133 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:09:54,121 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:09:54,129 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:09:54,852 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:09:54,853 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:09:59,859 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:09:59,952 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:10:36,060 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:10:36,067 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:10:37,025 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'sh']} on 1 hosts
+2022-05-11 10:10:37,026 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_configure() got an unexpected keyword argument 'commands'
+
+2022-05-11 10:10:42,032 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:10:43,151 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'commands': ['int G2/0', 'no sh']} on 1 hosts
+2022-05-11 10:11:46,198 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:11:46,204 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:11:46,891 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0\nsh'} on 1 hosts
+2022-05-11 10:12:08,319 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/paramiko/channel.py", line 699, in recv
+    out = self.in_buffer.read(nbytes, self.timeout)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/paramiko/buffered_pipe.py", line 164, in read
+    raise PipeTimeout()
+paramiko.buffered_pipe.PipeTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 573, in _read_channel_expect
+    new_data = self.remote_conn.recv(MAX_BUFFER)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/paramiko/channel.py", line 701, in recv
+    raise socket.timeout()
+socket.timeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 175, in _discover_file_system
+    return self.device._autodetect_fs()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/cisco_base_connection.py", line 203, in _autodetect_fs
+    output = self.send_command_expect(cmd)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1582, in send_command_expect
+    return self.send_command(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1496, in send_command
+    new_data = self.read_until_pattern(pattern=re.escape(cmd))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 583, in _read_channel_expect
+    raise NetmikoTimeoutException(
+netmiko.ssh_exception.NetmikoTimeoutException: Timed-out reading channel, data not available.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 320, in load_merge_candidate
+    file_system=self.dest_file_system,
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 3566, in dest_file_system
+    self._dest_file_system = self._discover_file_system()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 181, in _discover_file_system
+    raise CommandErrorException(msg)
+napalm.base.exceptions.CommandErrorException: Netmiko _autodetect_fs failed (to workaround specify dest_file_system in optional_args.)
+
+2022-05-11 10:12:13,324 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:12:15,064 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0\nno sh'} on 1 hosts
+2022-05-11 10:12:28,416 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:12:28,427 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:12:29,172 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0\nsh'} on 1 hosts
+2022-05-11 10:14:14,114 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:14:14,119 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:14:14,895 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0\nsh'} on 1 hosts
+2022-05-11 10:15:29,040 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:15:29,151 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0\nno sh'} on 1 hosts
+2022-05-11 10:16:09,135 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 10:16:09,140 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:16:09,893 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0.10\nsh'} on 1 hosts
+2022-05-11 10:16:22,120 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['sh vrrp brief']} on 1 hosts
+2022-05-11 10:16:22,219 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int G2/0.10\nno sh'} on 1 hosts

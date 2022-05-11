@@ -10,3 +10,13 @@ interface g2/0.20
     description "Vlan 20"
     ip address 172.16.20.253 255.255.255.0
     exit
+
+
+
+interface G2/0.10
+    vrrp 10 ip 172.16.10.252
+    vrrp 10 priority 1
+
+interface g2/0.20
+    vrrp 20 ip 172.16.20.252
+    vrrp 20 priority 1

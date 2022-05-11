@@ -1,3 +1,5 @@
+import time
+
 from nornir import InitNornir
 from create_config import save_built_config
 
@@ -196,27 +198,84 @@ def question_35(nr):
     #print(results)#['get_config']['running']
     for host in list(results.keys()):
         a = (results[host][0].result)['get_config']['running']
-        save_built_config(f"./config/backup_{host}.bak",a)
-    #TODO faire une boucle.
+        save_built_config(f"./config/backup/{host}.bak",a)
+    
 
 def question_36(nr):
-    pass
+    print("="*20+"\nQuestion 36")
+
+    commande = "sh ip int brief"
+    results = nr.filter(device_type="router").run(task=netmiko_send_command,command_string=commande)
+    print_result(results)
+    """for host in list(results.keys()):
+        
+        a = (results[host][0].result[0])[commande]
+        print(a)"""
+
+    
 
 def question_37(nr):
-    pass
+    print("="*20+"\nQuestion 37")
+
+    routers = ["172.16.100.125","172.16.100.126"]
+    loopback_ips = ["1.1.1.2 255.255.255.255","2.2.2.3 255.255.255.255"]
+    for i in range(len(routers)):
+        router = routers[i]
+        commandes = ["int lo2",f"ip add {loopback_ips[i]}"]
+        result = nr.filter(hostname=router).run(task=netmiko_send_config, config_commands=commandes)
+        print_result(result)
 
 def question_38(nr):
-    pass
+    print("="*20+"\nQuestion 38")
+    print("Save config")
+    return nr.filter(device_type="router").filter(building="A").run(task=netmiko_save_config)
+    
 
 def question_39(nr):
-    pass
+    print("="*20+"\nQuestion 39 - FREE FOR ALL")
+    fichiers = {
+        "R1-CPE-BAT-A":"./config/R1-BAT-A.txt",
+        "R2-CPE-BAT-A":"./config/R2-BAT-A.txt",
+        "R1-CPE-BAT-B":"./config/R1-BAT-B.txt",
+        "R2-CPE-BAT-B":"./config/R2-BAT-B.txt",
+        "ESW1-CPE-BAT-A":"./config/ESW1-BAT-A.txt",
+        "ESW1-CPE-BAT-B":"./config/ESW1-BAT-B.txt",
+    }
+    for host,file in fichiers.items():
+
+        print(host+"=>"+file)
+        #with open(file,"r") as f:
+        #    print(f.read())
+        res = nr.filter(device_name=host).run(task=napalm_configure,filename=file)
+        print_result(res)
+    
+    nr.run(task=netmiko_save_config)
+
+
+def question_39_d(nr):
+    print("="*20+"\nQuestion 39 - D")
+    # bat A
+    #sh R1
+    res= nr.filter(device_name="R1-CPE-BAT-A").run(task=napalm_cli, commands=["sh vrrp brief"])
+    print("Etat VRRP")
+    print_result(res)
+    
+    #shutdown int R2
+    res= nr.filter(device_name="R2-CPE-BAT-A").run(task=napalm_configure, configuration="\n".join(["int G2/0.10","sh"]))
+    print("Shutdown de l'interface G2/0")
+    time.sleep(1)
+    res = nr.filter(device_name="R1-CPE-BAT-A").run(task=napalm_cli, commands=["sh vrrp brief"])
+    print("Etat VRRP")
+    print_result(res)
+    res= nr.filter(device_name="R2-CPE-BAT-A").run(task=napalm_configure, configuration="\n".join(["int G2/0.10","no sh"]))
+    print("Remise en bon fonctionnement.")
+
     
 def question_40(nr):
     pass
 
 
-def question_41(nr):
-    pass
+
 
 if __name__ == "__main__":
     
@@ -252,6 +311,7 @@ if __name__ == "__main__":
 
 
     from nornir_utils.plugins.functions import print_result
+    
 
     #question_28(result)   
     
@@ -268,11 +328,12 @@ if __name__ == "__main__":
     
     #question_33(nr)
     #question_34(nr)
-    question_35(nr)
-    question_36(nr)
-    question_37(nr)
-    question_38(nr)
-    question_39(nr)
+    #question_35(nr)
+    #question_36(nr)
+    #question_37(nr)
+    #question_38(nr)
+    #question_39(nr)
+    question_39_d(nr)
 
     question_40(nr)
-    question_41(nr)
+    

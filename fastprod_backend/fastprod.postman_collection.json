@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "ad311128-e26e-44c3-8669-32a01c803055",
+		"name": "fastprod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "devices",
+			"item": [
+				{
+					"name": "getInventory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/devices",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addInventory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hostname\": \"172.16.100.121\",\n    \"data\": {\n        \"device_type\": \"router\",\n        \"device_name\": \"R1-CPE-BAT-C\",\n        \"device_model\": \"C7200\",\n        \"locality\": \"Lyon\",\n        \"building\": \"C\",\n        \"room\": \"002\"\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/devices",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDeviceByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/devices/R1-CPE-BAT-C",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"devices",
+								"R1-CPE-BAT-C"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDeviceByName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/devices/R1-CPE-BAT-C",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"devices",
+								"R1-CPE-BAT-C"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDeviceInterfaces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/devices/R1-CPE-BAT-A/interfaces",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"devices",
+								"R1-CPE-BAT-A",
+								"interfaces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDeviceInterfacesIp",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "helloworld",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:5000",
+			"type": "default"
+		}
+	]
+}

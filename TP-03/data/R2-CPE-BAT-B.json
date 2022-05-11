@@ -1,7 +1,7 @@
 {
     "hostname":"R2",
     "interfaces":[{
-        "name":"G2/0.10",
+        "name":"G3/0.10",
         "description":"Vlan 10",
         "ip":"172.16.30.254",
         "mask":"255.255.255.0",
@@ -15,7 +15,7 @@
         
 
     },{
-        "name":"g2/0.20",
+        "name":"g3/0.20",
         "description":"Vlan 20",
         "ip":"172.16.40.254",
         "mask":"255.255.255.0",

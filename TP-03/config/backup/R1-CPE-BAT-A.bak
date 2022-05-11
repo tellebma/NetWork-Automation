@@ -5,7 +5,7 @@ service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname R2-CPE-BAT-A
+hostname R1-CPE-BAT-A
 !
 boot-start-marker
 boot-end-marker
@@ -21,7 +21,7 @@ ip cef
 !
 !
 no ip domain lookup
-ip domain name r2.cpe.local
+ip domain name r1.cpe.local
 no ipv6 cef
 !
 multilink bundle-name authenticated
@@ -59,11 +59,13 @@ ip scp server enable
 !
 !
 interface Loopback1
- ip address 2.2.2.2 255.255.255.255
+ ip address 1.1.1.1 255.255.255.255
+!
+interface Loopback2
+ ip address 1.1.1.2 255.255.255.255
 !
 interface FastEthernet0/0
- no ip address
- shutdown
+ ip address 172.16.100.62 255.255.255.192
  duplex half
 !
 interface Serial1/0
@@ -72,12 +74,12 @@ interface Serial1/0
  serial restart-delay 0
 !
 interface Serial1/1
- no ip address
- shutdown
+ ip address 10.1.1.1 255.255.255.252
  serial restart-delay 0
 !
 interface Serial1/2
- ip address 10.1.2.1 255.255.255.0
+ no ip address
+ shutdown
  serial restart-delay 0
 !
 interface Serial1/3
@@ -91,14 +93,16 @@ interface GigabitEthernet2/0
 !
 interface GigabitEthernet2/0.99
  encapsulation dot1Q 99
- ip address 172.16.100.126 255.255.255.192
+ ip address 172.16.100.125 255.255.255.192
  vrrp 99 ip 172.16.100.124
- vrrp 99 priority 110
 !
 router ospf 1
+ router-id 1.1.1.1
  log-adjacency-changes
+ passive-interface FastEthernet0/0
  passive-interface GigabitEthernet2/0.99
- network 10.1.2.0 0.0.0.3 area 0
+ network 10.1.1.0 0.0.0.3 area 0
+ network 172.16.100.0 0.0.0.63 area 0
  network 172.16.100.64 0.0.0.63 area 0
 !
 ip forward-protocol nd

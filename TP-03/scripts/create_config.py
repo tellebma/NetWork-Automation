@@ -1,3 +1,4 @@
+from re import template
 from jinja2 import Template, Environment, FileSystemLoader
 import json
 
@@ -42,7 +43,12 @@ def create_config_cpe_lyon_batA():
     if len(conf_to_gen) == len(type_template):
         for i in range(len(conf_to_gen)):
             data = load_json_data_from_file(conf_to_gen[i])
-            config_gen.append(render_network_config(type_template[i],data))
+            
+            render = render_network_config(type_template[i],data)
+            if type_template[i] == "./vlan_router.j2":
+                render += "\n"+render_network_config("./vrrp_router.j2",data)
+
+            config_gen.append(render)
     
     return config_gen
 
@@ -58,7 +64,12 @@ def create_config_cpe_lyon_batB():
     if len(conf_to_gen) == len(type_template):
         for i in range(len(conf_to_gen)):
             data = load_json_data_from_file(conf_to_gen[i])
-            config_gen.append(render_network_config(type_template[i],data))
+            
+            render = render_network_config(type_template[i],data)
+            if type_template[i] == "./vlan_router.j2":
+                render += "\n"+render_network_config("./vrrp_router.j2",data)
+
+            config_gen.append(render)
     
     return config_gen
     
