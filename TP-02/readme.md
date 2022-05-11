@@ -8,11 +8,11 @@ Puis passage dans un render de template et écriture de la configuration dans un
 Mise en situation cas réél (simulation GNS3)
 
 ### <a href="./scripts/run_paramiko.py">Paramiko</a>
-Fonctionnement assez basic
-- Connexion avec l'equipement
+Fonctionnement assez basic  
+- Connexion avec l'equipement  
 - envoi de commande.  
 - Sauvegarde de la configuration de l'équipement  
-<b>NB:</b>  
+  <b>NB:</b>  
 Pas de gestion de l'environnement invité de commande (conf t, etc)  
 
 ### <a href="./scripts/run_paramiko.py">Netmiko  </a>
