@@ -11,8 +11,9 @@ Mise en situation cas réél (simulation GNS3)
 Fonctionnement assez basic
 - Connexion avec l'equipement
 - envoi de commande.  
-- Sauvegarde de la configuration de l'équipement
-<b>NB:  Pas de gestion de l'environnement invité de commande (conf t, etc)</b>  
+- Sauvegarde de la configuration de l'équipement  
+<b>NB:</b>  
+Pas de gestion de l'environnement invité de commande (conf t, etc)  
 
 ### <a href="./scripts/run_paramiko.py">Netmiko  </a>
 Netmiko est assez pratique, simple a utiliser, mais assez basic.
