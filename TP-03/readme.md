@@ -26,7 +26,8 @@ R1-CPE-BAT-A:
 ```
 
 L'initialisation de nornir permet d'acceder à toutes les info possible, identifiant de connexion aux routers, mdp, ip etc.   
-La commande pour effectuer des tâche est la suivante:  ```python
+La commande pour effectuer des tâche est la suivante:  
+```python
 nr.filter(device_type="router_switch").run(task=hello_world) 
 ```  
 Dans le cas ou l'on souhaite faire des tâches plus complexe, on couple nornir avec les différents outils utilisé dans le <a href="../TP-02">TP-02</a>
