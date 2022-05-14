@@ -15,12 +15,12 @@ Fonctionnement assez basic
   <b>NB:</b>  
 Pas de gestion de l'environnement invité de commande (conf t, etc)  
 
-### <a href="./scripts/run_paramiko.py">Netmiko  </a>
+### <a href="./scripts/run_netmiko.py">Netmiko  </a>
 Netmiko est assez pratique, simple a utiliser, mais assez basic.
 - Envoi de commande en # et en Conf T. (send_command, send_config_set)
 - Envoie de fichier de configuration (send_config_from_file)  
 
-###  <a href="./scripts/run_paramiko.py">Napalm </a>
+###  <a href="./scripts/run_napalm.py">Napalm </a>
 Napalm est l'outil le plus complet sur lequel nous avons travaillé.
 - Connexion à l'équipement
 - Envoi de commande cli et configuration
